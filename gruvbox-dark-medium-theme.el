@@ -110,16 +110,8 @@
 
   (gruvbox-bg gruvbox-dark0))
 
- (custom-theme-set-variables 'gruvbox-dark-medium
-                             `(ansi-color-names-vector
-                               [,gruvbox-dark1
-                                ,gruvbox-bright_red
-                                ,gruvbox-bright_green
-                                ,gruvbox-bright_yellow
-                                ,gruvbox-bright_blue
-                                ,gruvbox-bright_purple
-                                ,gruvbox-bright_aqua
-                                ,gruvbox-light1])))
+ ;; Nil body
+ nil)
 
 ;;;###autoload
 (and load-file-name
