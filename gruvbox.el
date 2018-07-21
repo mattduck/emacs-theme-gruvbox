@@ -216,7 +216,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
      ;; helm
      (helm-M-x-key                              (:foreground gruvbox-bright_orange ))
-     (helm-action                               (:foreground gruvbox-white :underline t))
+     (helm-action                               (:foreground gruvbox-light0 :underline t))
      (helm-bookmark-addressbook                 (:foreground gruvbox-bright_red))
      (helm-bookmark-directory                   (:foreground gruvbox-bright_purple))
      (helm-bookmark-file                        (:foreground gruvbox-faded_blue))
@@ -224,16 +224,16 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (helm-bookmark-info                        (:foreground gruvbox-turquoise4))
      (helm-bookmark-man                         (:foreground gruvbox-sienna))
      (helm-bookmark-w3m                         (:foreground gruvbox-bright_yellow))
-     (helm-buffer-directory                     (:foreground gruvbox-white :background gruvbox-bright_blue))
+     (helm-buffer-directory                     (:foreground gruvbox-light0 :background gruvbox-bright_blue))
      (helm-buffer-not-saved                     (:foreground gruvbox-faded_red))
      (helm-buffer-process                       (:foreground gruvbox-burlywood4))
      (helm-buffer-saved-out                     (:foreground gruvbox-bright_red))
      (helm-buffer-size                          (:foreground gruvbox-bright_purple))
-     (helm-candidate-number                     (:foreground gruvbox-bright_green))
+     (helm-candidate-number                     (:foreground gruvbox-bright_aqua))
      (helm-ff-directory                         (:foreground gruvbox-bright_purple))
      (helm-ff-executable                        (:foreground gruvbox-turquoise4))
      (helm-ff-file                              (:foreground gruvbox-sienna))
-     (helm-ff-invalid-symlink                   (:foreground gruvbox-white :background gruvbox-bright_red))
+     (helm-ff-invalid-symlink                   (:foreground gruvbox-light0 :background gruvbox-bright_red))
      (helm-ff-prefix                            (:foreground gruvbox-black :background gruvbox-bright_yellow))
      (helm-ff-symlink                           (:foreground gruvbox-bright_orange))
      (helm-grep-cmd-line                        (:foreground gruvbox-bright_green))
@@ -248,14 +248,14 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (helm-history-remote                       (:foreground gruvbox-faded_red))
      (helm-lisp-completion-info                 (:foreground gruvbox-faded_orange))
      (helm-lisp-show-completion                 (:foreground gruvbox-bright_red))
-     (helm-locate-finish                        (:foreground gruvbox-white :background gruvbox-aquamarine4))
+     (helm-locate-finish                        (:foreground gruvbox-light0 :background gruvbox-aquamarine4))
      (helm-match                                (:foreground gruvbox-bright_orange))
      (helm-moccur-buffer                        (:foreground gruvbox-bright_aqua :underline t))
      (helm-prefarg                              (:foreground gruvbox-turquoise4))
-     (helm-selection                            (:foreground gruvbox-white :background gruvbox-dark2))
-     (helm-selection-line                       (:foreground gruvbox-white :background gruvbox-dark2))
+     (helm-selection                            (:foreground gruvbox-light0 :background gruvbox-dark1))
+     (helm-selection-line                       (:foreground gruvbox-light0 :background gruvbox-dark1))
      (helm-separator                            (:foreground gruvbox-faded_red))
-     (helm-source-header                        (:foreground gruvbox-light2))
+     (helm-source-header                        (:foreground gruvbox-bright_blue :background gruvbox-dark1))
      (helm-visible-mark                         (:foreground gruvbox-black :background gruvbox-light3))
 
      ;; company-mode
@@ -323,7 +323,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (org-special-keyword                       (:inherit 'font-lock-comment-face))
      (org-drawer                                (:inherit 'font-lock-function-face))
      (org-block                                 (:foreground gruvbox-light3))
-     (org-block-begin-line                      (:foreground gruvbox-dark4 :background gruvbox-dark1))
+     (org-block-begin-line                      (:foreground gruvbox-dark4))
      (org-block-end-line                        (:inherit 'org-block-begin-line))
      (org-column                                (:background gruvbox-dark0))
      (org-column-title                          (:background gruvbox-dark0 :underline t :weight 'bold))
@@ -385,27 +385,33 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (persp-selected-face                       (:foreground gruvbox-bright_orange))
 
      ;; powerline
-     (mode-line                                 (:background gruvbox-dark3
-                                                             :foreground gruvbox-light2
+     (mode-line                                 (:background gruvbox-dark0
+                                                             :foreground gruvbox-light3
                                                              :inverse-video nil
-                                                             :underline nil
-                                                             :box (:line-width 1 :color gruvbox-dark1 :style 'released-button)))
+                                                             :box (:line-width 1 :color gruvbox-dark2 :style 'released-button)
+                                                             :underline nil))
      (mode-line-inactive                        (:background gruvbox-dark1
                                                              :inverse-video nil
                                                              :foreground gruvbox-light4
-                                                             :box (:line-width -1 :color gruvbox-dark3 :style nil)
+                                                             :box (:line-width -1 :color gruvbox-dark2 :style nil)
                                                              :underline nil))
      (powerline-active0                         (:background gruvbox-dark4 :foreground gruvbox-light0 :inherit 'mode-line))
-     (powerline-active1                         (:background gruvbox-dark3 :foreground gruvbox-light0 :inherit 'mode-line))
-     (powerline-active2                         (:background gruvbox-dark2 :foreground gruvbox-light0 :inherit 'mode-line))
-     (powerline-inactive0                       (:background gruvbox-dark2 :foreground gruvbox-light4 :inherit 'mode-line))
-     (powerline-inactive1                       (:background gruvbox-dark1 :foreground gruvbox-light4 :inherit 'mode-line))
-     (powerline-inactive2                       (:background gruvbox-dark0 :foreground gruvbox-light4 :inherit 'mode-line))
-     (md/powerline-normal                       (:background gruvbox-light3 :foreground gruvbox-light0 :inherit 'mode-line))
+     (powerline-active1                         (:background gruvbox-dark1 :foreground gruvbox-bright_aqua :italic nil :inherit 'mode-line))
+     (powerline-active2                         (:background gruvbox-dark0 :foreground gruvbox-dark4 :inherit 'mode-line))
+     (powerline-inactive0                       (:inherit 'mode-line-inactive :foreground gruvbox-dark1))
+     (powerline-inactive1                       (:inherit 'mode-line-inactive :foreground gruvbox-dark1))
+     (powerline-inactive2                       (:inherit 'mode-line-inactive :foreground gruvbox-dark3))
+     (md/powerline-inactive                     (:inherit 'mode-line-inactive :foreground gruvbox-dark1))
+     (md/powerline-normal                       (:background gruvbox-light4 :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-insert                       (:background gruvbox-faded_yellow :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-visual                       (:background gruvbox-faded_aqua :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-replace                      (:background gruvbox-faded_orange :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-emacs                        (:background gruvbox-faded_purple :foreground gruvbox-light0 :inherit 'mode-line))
+     (md/modeline-flycheck-warning              (:background gruvbox-dark_red :foreground gruvbox-light0 :inherit 'mode-line))
+     (md/modeline-flycheck-error                (:background gruvbox-faded_orange :foreground gruvbox-light0 :inherit 'mode-line))
+
+     ;; flycheck
+     (flycheck-error-list-highlight             (:background gruvbox-dark1 :foreground gruvbox-light0 :bold nil))
 
      ;; isearch
      (isearch                                   (:foreground gruvbox-black :background gruvbox-bright_orange))
@@ -615,6 +621,8 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
      ;; which-function-mode
      (which-func                                 (:foreground gruvbox-faded_blue))
+
+     (fic-face (:inherit font-lock-comment-face :foreground gruvbox-light0_hard :background gruvbox-dark1))
 
      (font-lock-doc-face (:foreground gruvbox-dark3)))
 
