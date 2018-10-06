@@ -193,6 +193,9 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (diff-indicator-changed                    (:inherit 'diff-changed))
      (diff-indicator-added                      (:inherit 'diff-added))
      (diff-indicator-removed                    (:inherit 'diff-removed))
+     (diff-hl-change                            (:inherit 'diff-changed))
+     (diff-hl-insert                            (:inherit 'diff-added))
+     (diff-hl-delete                            (:inherit 'diff-removed))
 
      (js2-warning                               (:underline (:color gruvbox-bright_yellow :style 'wave)))
      (js2-error                                 (:underline (:color gruvbox-bright_red :style 'wave)))
@@ -592,6 +595,12 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (diredp-link-priv                          (:foreground gruvbox-faded_aqua  :background gruvbox-dark_aqua))
      (diredp-read-priv                          (:foreground gruvbox-bright_red  :background gruvbox-dark_red))
      (diredp-write-priv                         (:foreground gruvbox-bright_aqua :background gruvbox-dark_aqua))
+
+     ;; Neotree
+     (neo-dir-link-face                         (:inherit 'dired-directory))
+     (neo-header-face                           (:inherit 'dired-header))
+     (neo-root-dir-face                         (:foreground gruvbox-bright_red))
+     (neo-file-link-face                        (:inherit 'default))
 
      ;; eshell
      (eshell-prompt-face                         (:foreground gruvbox-bright_aqua))
