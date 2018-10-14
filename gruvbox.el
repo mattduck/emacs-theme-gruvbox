@@ -410,7 +410,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (md/powerline-visual                       (:background gruvbox-faded_aqua :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-replace                      (:background gruvbox-faded_orange :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-emacs                        (:background gruvbox-faded_purple :foreground gruvbox-light0 :inherit 'mode-line))
-     (md/modeline-flycheck-warning              (:background gruvbox-faded_orange :foreground gruvbox-white :inherit 'mode-line))
+     (md/modeline-flycheck-warning              (:background gruvbox-faded_purple :foreground gruvbox-white :inherit 'mode-line))
      (md/modeline-flycheck-error                (:background gruvbox-bright_red :foreground gruvbox-white :inherit 'mode-line))
 
      ;; flycheck
