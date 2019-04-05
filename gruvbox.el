@@ -628,6 +628,10 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (tabbar-selected                            (:inherit 'tabbar-default :foreground gruvbox-bright_yellow))
      (tabbar-selected-modified                   (:inherit 'tabbar-selected))
 
+     ;; annotate-mode
+     (annotate-annotation (:background gruvbox-light0 :foreground gruvbox-dark0 :bold t))
+     (annotate-highlight (:underline gruvbox-light0))
+
      ;; which-function-mode
      (which-func                                 (:foreground gruvbox-faded_blue))
 
