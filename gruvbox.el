@@ -118,7 +118,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (warning                                           (:foreground gruvbox-bright_yellow :bold t))
      (trailing-whitespace                               (:background gruvbox-bright_red))
      (escape-glyph                                      (:foreground gruvbox-bright_aqua))
-     (header-line                                       (:background gruvbox-dark0 :foreground gruvbox-light3 :box nil :inherit nil))
+     (header-line                                       (:background gruvbox-bg :foreground gruvbox-light3 :box nil :inherit nil))
      (highlight                                         (:background gruvbox-dark4 :foreground gruvbox-light0))
      (homoglyph                                         (:foreground gruvbox-bright_yellow))
      (match                                             (:foreground gruvbox-dark0 :background gruvbox-bright_blue))
@@ -675,6 +675,12 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
          ("DROPPED" . (:foreground ,gruvbox-gray
                                    :family "Courier New"
                                    :background ,gruvbox-dark1))
+         ("?" . (:foreground ,gruvbox-white
+                                   :family "Courier New"
+                                   :background ,gruvbox-bg))
+         ("BACK" . (:foreground ,gruvbox-faded_yellow
+                                   :family "Courier New"
+                                   :background ,gruvbox-bg))
          ("A_OPEN" . (:foreground ,gruvbox-bright_blue
                                   :family "Courier New"
                                   :background ,gruvbox-dark1))
