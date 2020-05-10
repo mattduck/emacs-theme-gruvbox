@@ -101,25 +101,25 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
      ;; Built-in syntax
 
-     (font-lock-keyword-face                            (:foreground gruvbox-bright_red :bold t))
-     (font-lock-builtin-face                            (:foreground gruvbox-bright_blue :bold t))
+     (font-lock-keyword-face                            (:foreground gruvbox-faded_blue :bold nil))
+     (font-lock-builtin-face                            (:foreground gruvbox-bright_blue :bold nil))
      (font-lock-constant-face                           (:foreground gruvbox-bright_yellow :bold t))
-     (font-lock-type-face                               (:foreground gruvbox-bright_purple :bold t))
-     (font-lock-string-face                             (:foreground gruvbox-bright_aqua :italic t
-     :bold t))
-     (font-lock-function-name-face                      (:foreground gruvbox-bright_blue :italic t :bold nil))
-     (font-lock-variable-name-face                      (:foreground gruvbox-light1 :italic t :bold t))
-     (font-lock-comment-face                            (:foreground gruvbox-dark4))
-     (font-lock-warning-face                            (:foreground gruvbox-bright_orange :bold t :italic t))
+     (font-lock-type-face                               (:foreground gruvbox-bright_purple :bold nil))
+     (font-lock-string-face                             (:foreground gruvbox-dark4 :italic nil :bold nil))
+     (font-lock-function-name-face                      (:foreground gruvbox-bright_blue :italic nil :bold nil))
+     (font-lock-variable-name-face                      (:foreground gruvbox-light1 :italic t :bold nil))
+     (font-lock-comment-face                            (:foreground gruvbox-dark2 :italic nil :height 0.85))
+     (font-lock-doc-face                                (:foreground gruvbox-dark2 :italic nil :bold nil))
+     (font-lock-warning-face                            (:foreground gruvbox-faded_purple :bold t :italic t))
 
      ;; Basic faces
-     (error                                             (:foreground gruvbox-bright_red :bold t))
+     (error                                             (:foreground gruvbox-bright_red :bold nil))
      (success                                           (:foreground gruvbox-bright_green :bold t))
-     (warning                                           (:foreground gruvbox-bright_yellow :bold t))
+     (warning                                           (:foreground gruvbox-bright_purple :bold nil))
      (trailing-whitespace                               (:background gruvbox-bright_red))
      (escape-glyph                                      (:foreground gruvbox-bright_aqua))
      (header-line                                       (:background gruvbox-bg :foreground gruvbox-light3 :box nil :inherit nil))
-     (highlight                                         (:background gruvbox-dark4 :foreground gruvbox-light0))
+     (highlight                                         (:background gruvbox-dark3 :foreground gruvbox-light0))
      (homoglyph                                         (:foreground gruvbox-bright_yellow))
      (match                                             (:foreground gruvbox-dark0 :background gruvbox-bright_blue))
 
@@ -337,7 +337,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (org-ellipsis                              (:foreground gruvbox-light4))
      (org-date                                  (:foreground gruvbox-dark3 :underline t))
      (org-sexp-date                             (:foreground gruvbox-faded_blue :underline t))
-     (org-code                                  (:foreground gruvbox-bright_green :family "Courier New"))
+     (org-code                                  (:foreground gruvbox-bright_green :family "Jetbrains Mono" :weight 'light :height 0.9))
      (org-tag                                   (:foreground gruvbox-bright_yellow :bold t :weight 'bold))
      (org-list-dt                               (:foreground gruvbox-faded_orange :bold t :weight 'bold))
      (org-todo                                  (:foreground gruvbox-faded_orange :background gruvbox-light1 :weight 'bold :bold nil))
@@ -389,7 +389,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
      ;; powerline
      (mode-line                                 (:background gruvbox-dark0
-                                                             :foreground gruvbox-light3
+                                                             :foreground gruvbox-light4
                                                              :inverse-video nil
                                                              :box (:line-width 1 :color gruvbox-dark2 :style 'released-button)
                                                              :underline nil))
@@ -405,16 +405,18 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (powerline-inactive1                       (:inherit 'mode-line-inactive :foreground gruvbox-dark1))
      (powerline-inactive2                       (:inherit 'mode-line-inactive :foreground gruvbox-dark3))
      (md/powerline-inactive                     (:inherit 'mode-line-inactive :foreground gruvbox-dark1))
-     (md/powerline-normal                       (:background gruvbox-light4 :foreground gruvbox-light0 :inherit 'mode-line))
+     (md/powerline-normal                       (:background gruvbox-dark1 :foreground gruvbox-light3 :inherit 'mode-line))
      (md/powerline-insert                       (:background gruvbox-faded_yellow :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-visual                       (:background gruvbox-faded_aqua :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-replace                      (:background gruvbox-faded_orange :foreground gruvbox-light0 :inherit 'mode-line))
      (md/powerline-emacs                        (:background gruvbox-faded_purple :foreground gruvbox-light0 :inherit 'mode-line))
-     (md/modeline-flycheck-warning              (:background gruvbox-faded_purple :foreground gruvbox-white :inherit 'mode-line))
-     (md/modeline-flycheck-error                (:background gruvbox-bright_red :foreground gruvbox-white :inherit 'mode-line))
+     (md/modeline-flycheck-warning              (:background gruvbox-dark1 :foreground gruvbox-faded_purple :inherit 'mode-line))
+     (md/modeline-flycheck-error                (:background gruvbox-dark1 :foreground gruvbox-faded_orange :inherit 'mode-line))
 
      ;; flycheck
      (flycheck-error-list-highlight             (:background gruvbox-dark1 :foreground gruvbox-light0 :bold nil))
+     (flycheck-error                            (:underline (:style 'wave :color gruvbox-faded_orange)))
+     (flycheck-warning                          (:underline (:style 'wave :color gruvbox-faded_purple)))
 
      ;; isearch
      (isearch                                   (:foreground gruvbox-black :background gruvbox-bright_orange))
@@ -628,6 +630,12 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (tabbar-selected                            (:inherit 'tabbar-default :foreground gruvbox-bright_yellow))
      (tabbar-selected-modified                   (:inherit 'tabbar-selected))
 
+
+     ;; dap-mode
+     (dap-ui-breakpoint-verified-fringe (:foreground gruvbox-bright_green))
+     (dap-ui-marker-face (:inherit 'highlight))
+     (dap-result-overlay-face (:inherit 'highlight :box (:line-width -1)))
+
      ;; annotate-mode
      (annotate-annotation (:background gruvbox-light0 :foreground gruvbox-dark0 :bold t))
      (annotate-highlight (:underline gruvbox-light0))
@@ -653,29 +661,30 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      `(org-priority-faces
        (backquote
         ((?A . (:foreground ,gruvbox-bright_orange
-                            :background ,gruvbox-dark1
+                            :background nil
                             :family "Courier New"))
          (?B . (:foreground ,gruvbox-light3
-                            :background ,gruvbox-dark1
+                            :background nil
                             :family "Courier New")))))
      `(org-todo-keyword-faces
        (backquote
         (("NOW" . (:foreground ,gruvbox-bright_orange
                                :family "Courier New"
-                               :background ,gruvbox-dark1))
+                               :bold nil
+                               :background nil))
          ("BLOCKED" . (:foreground ,gruvbox-bright_purple
                                    :family "Courier New"
                                    :background ,gruvbox-dark1))
          ("HOLD" . (:foreground ,gruvbox-gray
                                 :family "Courier New"
                                 :background ,gruvbox-dark1))
-         ("DONE" . (:foreground ,gruvbox-gray
+         ("DONE" . (:foreground ,gruvbox-dark2
                                 :family "Courier New"
-                                :background ,gruvbox-dark1))
-         ("DROPPED" . (:foreground ,gruvbox-gray
+                                :background nil))
+         ("DROPPED" . (:foreground ,gruvbox-dark2
                                    :family "Courier New"
-                                   :background ,gruvbox-dark1))
-         ("?" . (:foreground ,gruvbox-white
+                                   :background nil))
+         ("?" . (:foreground ,gruvbox-light4
                                    :family "Courier New"
                                    :background ,gruvbox-bg))
          ("BACK" . (:foreground ,gruvbox-faded_yellow
