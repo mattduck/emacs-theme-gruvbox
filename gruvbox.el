@@ -640,6 +640,22 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (annotate-annotation (:background gruvbox-light0 :foreground gruvbox-dark0 :bold t))
      (annotate-highlight (:underline gruvbox-light0))
 
+     ;; web-mode
+     (web-mode-html-tag-bracket-face (:foreground gruvbox-light0))
+     (web-mode-block-delimiter-face (:foreground gruvbox-faded_red))
+     (web-mode-html-tag-face (:foreground gruvbox-faded_orange :italic t))
+     (web-mode-html-attr-name-face (:foreground gruvbox-faded_yellow))
+     (web-mode-html-attr-value-face (:foreground gruvbox-dark4))
+     (web-mode-html-attr-equal-face (:inherit 'default))
+     (web-mode-function-call-face (:inherit 'default))
+
+     ;; all-the-icons
+     (all-the-icons-red (:foreground gruvbox-bright_red))
+     (all-the-icons-green (:foreground gruvbox-bright_green))
+     (all-the-icons-dgreen (:foreground gruvbox-faded_green))
+     (all-the-icons-dcyan (:foreground gruvbox-faded_aqua))
+     (all-the-icons-purple (:foreground gruvbox-bright_purple))
+
      ;; which-function-mode
      (which-func                                 (:foreground gruvbox-faded_blue))
 
@@ -660,12 +676,26 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      `(fci-rule-color ,gruvbox-dark1)
      `(org-priority-faces
        (backquote
-        ((?A . (:foreground ,gruvbox-bright_orange
+        ((?A . (:foreground ,gruvbox-bright_red
                             :background nil
-                            :family "Courier New"))
-         (?B . (:foreground ,gruvbox-light3
+                            :height 0.75
+                            :underline t))
+         (?B . (:foreground ,gruvbox-bright_yellow
                             :background nil
-                            :family "Courier New")))))
+                            :height 0.75
+                            :underline t))
+         (?C . (:foreground ,gruvbox-faded_blue
+                            :background nil
+                            :height 0.75
+                            :underline t))
+         (?D . (:foreground ,gruvbox-light3
+                            :background nil
+                            :height 0.75
+                            :underline t))
+         (?E . (:foreground ,gruvbox-light1
+                            :background nil
+                            :height 0.75
+                            :underline t)))))
      `(org-todo-keyword-faces
        (backquote
         (("NOW" . (:foreground ,gruvbox-bright_orange
@@ -673,8 +703,11 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
                                :bold nil
                                :background nil))
          ("BLOCKED" . (:foreground ,gruvbox-bright_purple
-                                   :family "Courier New"
-                                   :background ,gruvbox-dark1))
+                                   :family "Courier New"))
+         ("SCH" . (:foreground ,gruvbox-bright_purple
+                                   :family "Courier New"))
+         ("MEETING" . (:foreground ,gruvbox-bright_purple
+                                   :family "Courier New"))
          ("HOLD" . (:foreground ,gruvbox-gray
                                 :family "Courier New"
                                 :background ,gruvbox-dark1))
@@ -682,6 +715,9 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
                                 :family "Courier New"
                                 :background nil))
          ("DROPPED" . (:foreground ,gruvbox-dark2
+                                   :family "Courier New"
+                                   :background nil))
+         ("DUP" . (:foreground ,gruvbox-dark2
                                    :family "Courier New"
                                    :background nil))
          ("?" . (:foreground ,gruvbox-light4
