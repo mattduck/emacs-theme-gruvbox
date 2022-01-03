@@ -349,7 +349,9 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (org-formula                               (:foreground gruvbox-bright_yellow))
      (org-document-title                        (:foreground gruvbox-faded_blue))
      (org-document-info                         (:foreground gruvbox-faded_blue))
-     (org-agenda-structure                      (:inherit 'font-lock-comment-face))
+     (org-agenda-structure                      (:foreground gruvbox-faded_blue :weight 'bold :underline t))
+     (org-super-agenda-header                   (:foreground gruvbox-dark2 :weight 'bold :underline t))
+     (org-agenda-column-dateline                (:foreground gruvbox-bright_blue :weight 'bold :italic nil))
      (org-agenda-date-today                     (:foreground gruvbox-light0 :weight 'bold :italic t))
      (org-scheduled                             (:foreground gruvbox-bright_yellow))
      (org-scheduled-today                       (:foreground gruvbox-bright_blue))
@@ -677,31 +679,25 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      `(org-priority-faces
        (backquote
         ((?A . (:foreground ,gruvbox-bright_red
-                            :background nil
                             :height 0.75
                             :underline t))
          (?B . (:foreground ,gruvbox-bright_yellow
-                            :background nil
                             :height 0.75
                             :underline t))
          (?C . (:foreground ,gruvbox-faded_blue
-                            :background nil
                             :height 0.75
                             :underline t))
          (?D . (:foreground ,gruvbox-light3
-                            :background nil
                             :height 0.75
                             :underline t))
          (?E . (:foreground ,gruvbox-light1
-                            :background nil
                             :height 0.75
                             :underline t)))))
      `(org-todo-keyword-faces
        (backquote
         (("NOW" . (:foreground ,gruvbox-bright_orange
                                :family "Courier New"
-                               :bold nil
-                               :background nil))
+                               :bold nil))
          ("BLOCKED" . (:foreground ,gruvbox-bright_purple
                                    :family "Courier New"))
          ("SCH" . (:foreground ,gruvbox-bright_purple
@@ -712,14 +708,11 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
                                 :family "Courier New"
                                 :background ,gruvbox-dark1))
          ("DONE" . (:foreground ,gruvbox-dark2
-                                :family "Courier New"
-                                :background nil))
+                                :family "Courier New"))
          ("DROPPED" . (:foreground ,gruvbox-dark2
-                                   :family "Courier New"
-                                   :background nil))
+                                   :family "Courier New"))
          ("DUP" . (:foreground ,gruvbox-dark2
-                                   :family "Courier New"
-                                   :background nil))
+                                   :family "Courier New"))
          ("?" . (:foreground ,gruvbox-light4
                                    :family "Courier New"
                                    :background ,gruvbox-bg))
