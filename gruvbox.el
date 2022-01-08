@@ -119,7 +119,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (trailing-whitespace                               (:background gruvbox-bright_red))
      (escape-glyph                                      (:foreground gruvbox-bright_aqua))
      (header-line                                       (:background gruvbox-bg :foreground gruvbox-light3 :box nil :inherit nil))
-     (highlight                                         (:background gruvbox-dark3 :foreground gruvbox-light0))
+     (highlight                                         (:background gruvbox-bright_yellow :foreground gruvbox-black :weight 'bold))
      (homoglyph                                         (:foreground gruvbox-bright_yellow))
      (match                                             (:foreground gruvbox-dark0 :background gruvbox-bright_blue))
 
