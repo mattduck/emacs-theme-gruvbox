@@ -713,7 +713,15 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
                                    :family "Courier New"))
          ("DUP" . (:foreground ,gruvbox-dark2
                                    :family "Courier New"))
+         ("DEL" . (:foreground ,gruvbox-dark2
+                                   :family "Courier New"))
+         ("INBOX" . (:foreground ,gruvbox-light4
+                                   :family "Courier New"
+                                   :background ,gruvbox-bg))
          ("?" . (:foreground ,gruvbox-light4
+                                   :family "Courier New"
+                                   :background ,gruvbox-bg))
+         ("ICE" . (:foreground ,gruvbox-light4
                                    :family "Courier New"
                                    :background ,gruvbox-bg))
          ("BACK" . (:foreground ,gruvbox-faded_yellow
