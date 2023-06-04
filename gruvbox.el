@@ -391,14 +391,16 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
 
      ;; powerline
      (mode-line                                 (:background gruvbox-dark0
-                                                             :foreground gruvbox-light4
-                                                             :inverse-video nil
-                                                             :box (:line-width 1 :color gruvbox-dark2 :style 'released-button)
+                                                             :foreground gruvbox-light3
+                                                             :height 0.9
+                                                             ;;:inverse-video nil
+                                                             :box (:line-width 3 :style nil)
                                                              :underline nil))
      (mode-line-inactive                        (:background gruvbox-dark1
-                                                             :inverse-video nil
+                                                             ;;:inverse-video nil
                                                              :foreground gruvbox-light4
-                                                             :box (:line-width -1 :color gruvbox-dark2 :style nil)
+                                                             :height 0.9
+                                                             :box (:line-width 1 :style nil)
                                                              :underline nil))
      (powerline-active0                         (:background gruvbox-dark4 :foreground gruvbox-light0 :inherit 'mode-line))
      (powerline-active1                         (:background gruvbox-dark1 :foreground gruvbox-bright_aqua :italic nil :inherit 'mode-line))
