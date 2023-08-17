@@ -709,8 +709,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
          ("MEETING" . (:foreground ,gruvbox-bright_purple
                                    :family "Courier New"))
          ("HOLD" . (:foreground ,gruvbox-gray
-                                :family "Courier New"
-                                :background ,gruvbox-dark1))
+                                :family "Courier New"))
          ("DONE" . (:foreground ,gruvbox-dark2
                                 :family "Courier New"))
          ("DROPPED" . (:foreground ,gruvbox-dark2
@@ -731,6 +730,12 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
          ("BACK" . (:foreground ,gruvbox-faded_yellow
                                    :family "Courier New"
                                    :background ,gruvbox-bg))
+         ("PROJ" . (:foreground ,gruvbox-bright_blue
+                                  :family "Courier New"
+                                  :background ,gruvbox-dark1))
+         ("PROJ_CLOSED" . (:foreground ,gruvbox-gray
+                                  :family "Courier New"
+                                  :background ,gruvbox-dark1))
          ("A_OPEN" . (:foreground ,gruvbox-bright_blue
                                   :family "Courier New"
                                   :background ,gruvbox-dark1))
