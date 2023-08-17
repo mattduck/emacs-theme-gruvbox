@@ -665,6 +665,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (which-func                                 (:foreground gruvbox-faded_blue))
 
      (fic-face (:inherit font-lock-comment-face :foreground gruvbox-light0_hard :background gruvbox-dark1))
+     (font-lock-doc-face (:foreground gruvbox-dark3))
 
      ;; [2023-06-04]
      (vertico-current (:inherit 'region)))
