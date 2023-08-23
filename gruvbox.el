@@ -323,7 +323,7 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (org-level-6                               (:inherit 'outline-6))
      (org-level-7                               (:inherit 'outline-7))
      (org-level-8                               (:inherit 'outline-8))
-     (org-special-keyword                       (:inherit 'font-lock-comment-face))
+     (org-special-keyword                       (:inherit 'font-lock-comment-face :height 0.75))
      (org-drawer                                (:inherit 'org-special-keyword))
      (org-property-value                        (:inherit 'org-special-keyword))
      (org-block                                 (:foreground gruvbox-light3))
@@ -667,7 +667,11 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (fic-face (:inherit font-lock-comment-face :foreground gruvbox-light0_hard :background gruvbox-dark1))
 
      ;; [2023-06-04]
-     (vertico-current (:inherit 'region)))
+     (vertico-current (:inherit 'region))
+
+     ;; [2023-08-23] comint
+     (comint-highlight-prompt (:foreground gruvbox-bright_green :background gruvbox-dark1 :box (:line-width 1 :color gruvbox-dark2 )))
+     (comint-highlight-input (:background gruvbox-dark1 :box (:line-width 1 :color gruvbox-dark2))))
 
     ;; Set same variables for all themes
     (custom-theme-set-variables
