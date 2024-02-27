@@ -107,10 +107,11 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (font-lock-type-face                               (:foreground gruvbox-bright_purple :bold nil))
      (font-lock-string-face                             (:foreground gruvbox-dark4 :italic nil :bold nil))
      (font-lock-function-name-face                      (:foreground gruvbox-bright_blue :italic nil :bold nil))
-     (font-lock-variable-name-face                      (:foreground gruvbox-light1 :italic t :bold nil))
+     (font-lock-variable-name-face                      (:foreground gruvbox-light1 :italic nil :bold nil))
      (font-lock-comment-face                            (:foreground gruvbox-dark2 :italic nil :height 0.85))
      (font-lock-doc-face                                (:foreground gruvbox-dark2 :italic nil :bold nil))
      (font-lock-warning-face                            (:foreground gruvbox-faded_purple :bold t :italic t))
+     (font-lock-function-call-face                      (:foreground gruvbox-light2 :italic t :bold nil))
 
      ;; Basic faces
      (error                                             (:foreground gruvbox-bright_red :bold nil))
