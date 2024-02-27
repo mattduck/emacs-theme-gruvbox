@@ -57,7 +57,11 @@
  ((((class color) (min-colors #xFFFFFF))        ; col 1 GUI/24bit
    ((class color) (min-colors #xFF)))           ; col 2 Xterm/256
 
-  (gruvbox-dark0_hard      "#f9f5d7" "#ffffd7")
+  ;;(gruvbox-dark0_hard      "#f9f5d7" "#ffffd7")
+
+  ;; NOTE - changing this from default as it's too yellow
+  (gruvbox-dark0_hard      "#f9f5f7" "#ffffd7")
+
   (gruvbox-dark0           "#fbf1c7" "#ffffd7")
   (gruvbox-dark0_soft      "#f2e5bc" "#ffffd7")
   (gruvbox-dark1           "#ebdbb2" "#ffffaf")
@@ -68,6 +72,8 @@
   (gruvbox-gray            "#928374" "#8a8a8a")
 
   (gruvbox-light0_hard     "#1d2021" "#1c1c1c")
+  ;;(gruvbox-light0          "#282828" "#262626")
+
   (gruvbox-light0          "#282828" "#262626")
   (gruvbox-light0_soft     "#32302f" "#303030")
   (gruvbox-light1          "#3c3836" "#3a3a3a")
