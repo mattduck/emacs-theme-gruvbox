@@ -673,6 +673,15 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      ;; [2023-06-04]
      (vertico-current (:inherit 'region))
 
+     ;; [2024-02-29] treemacs
+     (treemacs-file-face (:height 0.8))
+     (treemacs-directory-face (:height 0.8 :foreground gruvbox-bright_aqua))
+     (treemacs-tags-face (:foreground gruvbox-light2 :underline (:color gruvbox-dark4) :height 0.8))
+     (treemacs-root-face (:foreground gruvbox-light1 :background gruvbox-dark0 :bold nil :height 0.8))
+     (treemacs-git-added-face (:foreground gruvbox-faded_green :underline (:color gruvbox-faded_green :style 'wave) :height 0.8 :bold t))
+     (treemacs-git-modified-face (:foreground gruvbox-faded_blue :underline (:color gruvbox-faded_blue :style 'wave) :height 0.8 :bold t))
+     (treemacs-hl-line-face (:foreground nil :background nil))
+
      ;; [2023-08-23] comint
      (comint-highlight-prompt (:foreground gruvbox-bright_green :background gruvbox-dark1 :box (:line-width 1 :color gruvbox-dark2 )))
      (comint-highlight-input (:background gruvbox-dark1 :box (:line-width 1 :color gruvbox-dark2))))
