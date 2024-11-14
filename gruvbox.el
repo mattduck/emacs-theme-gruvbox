@@ -436,6 +436,10 @@ Should contain 2 %s constructs to allow for theme name and directory/prefix")
      (markdown-header-face-4                    (:foreground gruvbox-bright_red))
      (markdown-header-face-5                    (:foreground gruvbox-bright_green))
      (markdown-header-face-6                    (:foreground gruvbox-bright_aqua))
+     ;; Use default for code-face as I use the native syntax highlighting
+     (markdown-code-face                        (:inherit 'default))
+     (markdown-inline-code-face                 (:inherit 'org-code))
+     (markdown-pre-face                         (:foreground gruvbox-bright_yellow))
 
      ;; anzu-mode
      (anzu-mode-line                            (:foreground gruvbox-bright_yellow :weight 'bold))
